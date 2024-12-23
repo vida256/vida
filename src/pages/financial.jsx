@@ -102,7 +102,7 @@ const WasteManagementSection = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative h-64">
                 <img
-                  src="/api/placeholder/800/400"
+                  src="/img/teaching.png"
                   alt="VIDA Consulting Services"
                   className="w-full h-full object-cover"
                 />
