@@ -1,4 +1,5 @@
 import { Home } from "@/pages";
+import PartnersScreen from "./pages/PartnersScreen";
 
 export const routes = [
   {
@@ -14,7 +15,7 @@ export const routes = [
   {
     name: "Partners",
     path: "/partners",
-    element: <Home />
+    element: <PartnersScreen />
   },
   {
     name: "Projects",

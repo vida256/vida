@@ -7,18 +7,18 @@ import GIZ from '/partners/giz.png';
 import GOAL from '/partners/goal.png';
 import IFAD from '/partners/ifad.png';
 import IIRR from '/partners/iirr.png';
-import MAAI from '/partners/maai.png';
+// import MAAI from '/partners/maai.png';
 import MAAIF from '/partners/maaif.png';
 import MWE from '/partners/mwe.png';
 import RESTLESS from '/partners/restless.png';
 
 export const partnersData = [
-  {
-    id: 1,
-    name: "Ministry of Agriculture, Animal Industry and Fisheries",
-    shortName: "MAAI",
-    logo: MAAI
-  },
+//   {
+//     id: 1,
+//     name: "Ministry of Agriculture, Animal Industry and Fisheries",
+//     shortName: "MAAI",
+//     logo: MAAI
+//   },
   {
     id: 2,
     name: "Ministry of Agriculture, Animal Industry & Fisheries",
