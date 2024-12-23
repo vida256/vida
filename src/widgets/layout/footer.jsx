@@ -1,5 +1,3 @@
-// src/components/layout/Footer.jsx
-
 import { Typography } from "@material-tailwind/react";
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -24,11 +22,11 @@ export function Footer({ content = footerContent }) {
       {/* Newsletter Section */}
       <div className="bg-[#f0f2f2]">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          <div className="bg-[#023a2f] p-8 rounded-lg">
+          <div className="bg-[#003A7A] p-8 rounded-lg">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
                 <div className="bg-yellow-400 p-3 rounded">
-                  <Mail className="w-6 h-6 text-[#012920]" />
+                  <Mail className="w-6 h-6 text-[#002654]" />
                 </div>
                 <Typography variant="h6" color="white">
                   {newsletter.title}<br />
@@ -41,7 +39,7 @@ export function Footer({ content = footerContent }) {
                   placeholder={newsletter.placeholder}
                   className="flex-grow md:w-80 px-4 py-2.5 rounded bg-white/10 text-white placeholder-white/60 border border-white/20"
                 />
-                <button className="bg-white text-[#012920] px-6 py-2.5 rounded flex items-center gap-2 hover:bg-white/90 transition-colors">
+                <button className="bg-white text-[#002654] px-6 py-2.5 rounded flex items-center gap-2 hover:bg-white/90 transition-colors">
                   {newsletter.buttonText}
                   <ArrowRight size={16} />
                 </button>
@@ -52,7 +50,7 @@ export function Footer({ content = footerContent }) {
       </div>
 
       {/* Footer Links */}
-      <div className="bg-[#012920] pt-8 pb-16">
+      <div className="bg-[#002654] pt-8 pb-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             <div className="lg:col-span-2">

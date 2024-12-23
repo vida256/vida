@@ -143,7 +143,7 @@ const InquiryFormSection = () => {
   const hidden = 'opacity-0 translate-y-10';
 
   return (
-    <section className="w-full bg-[#012920] py-12 flex items-center justify-center p-4">
+    <section className="w-full bg-[#002654] py-12 flex items-center justify-center p-4">
       <div className="max-w-7xl w-full bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Left Side - Stats with Background */}
         <div className="w-full md:w-2/5 relative">
@@ -155,7 +155,7 @@ const InquiryFormSection = () => {
               backgroundPosition: 'center'
             }}
           >
-            <div className="absolute inset-0 bg-green-600/90"></div>
+            <div className="absolute inset-0 bg-blue-600/90"></div>
           </div>
 
           <div className="relative z-10 p-6 flex flex-col justify-between h-full text-white">
@@ -188,7 +188,7 @@ const InquiryFormSection = () => {
           
           <p className="text-gray-600 mb-4 text-xs">
             {form.subtitle}{' '}
-            <a href={`tel:${form.phoneNumber}`} className="text-green-600 font-medium">
+            <a href={`tel:${form.phoneNumber}`} className="text-blue-600 font-medium">
               {form.phoneNumber}
             </a>{' '}
             {form.phoneText}
@@ -206,7 +206,7 @@ const InquiryFormSection = () => {
                   value={formData.serviceType}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                     ${errors.serviceType && touched.serviceType ? 'border-red-500' : 'border-gray-300'}`}
                 >
                   <option value="">{form.fields.serviceType.placeholder}</option>
@@ -229,7 +229,7 @@ const InquiryFormSection = () => {
                   value={formData.businessType}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                     ${errors.businessType && touched.businessType ? 'border-red-500' : 'border-gray-300'}`}
                 >
                   <option value="">{form.fields.businessType.placeholder}</option>
@@ -243,6 +243,7 @@ const InquiryFormSection = () => {
               </div>
             </div>
 
+            {/* Rest of form fields with updated focus ring colors */}
             {/* Subject */}
             <div>
               <label className="block text-xs font-medium text-gray-700 mb-1">
@@ -255,7 +256,7 @@ const InquiryFormSection = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 placeholder={form.fields.subject.placeholder}
-                className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                   ${errors.subject && touched.subject ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.subject && touched.subject && (
@@ -275,7 +276,7 @@ const InquiryFormSection = () => {
                 onBlur={handleBlur}
                 rows={2}
                 placeholder={form.fields.message.placeholder}
-                className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                   ${errors.message && touched.message ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.message && touched.message && (
@@ -283,6 +284,7 @@ const InquiryFormSection = () => {
               )}
             </div>
 
+            {/* Contact Information fields */}
             <div className="grid grid-cols-2 gap-3">
               {/* Full Name */}
               <div>
@@ -296,7 +298,7 @@ const InquiryFormSection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder={form.fields.fullName.placeholder}
-                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                     ${errors.fullName && touched.fullName ? 'border-red-500' : 'border-gray-300'}`}
                 />
                 {errors.fullName && touched.fullName && (
@@ -316,7 +318,7 @@ const InquiryFormSection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder={form.fields.companyName.placeholder}
-                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                     ${errors.companyName && touched.companyName ? 'border-red-500' : 'border-gray-300'}`}
                 />
                 {errors.companyName && touched.companyName && (
@@ -338,7 +340,7 @@ const InquiryFormSection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder={form.fields.email.placeholder}
-                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                     ${errors.email && touched.email ? 'border-red-500' : 'border-gray-300'}`}
                 />
                 {errors.email && touched.email && (
@@ -358,7 +360,7 @@ const InquiryFormSection = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder={form.fields.phone.placeholder}
-                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-green-500 
+                  className={`w-full px-2.5 py-1.5 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-500 
                     ${errors.phone && touched.phone ? 'border-red-500' : 'border-gray-300'}`}
                 />
                 {errors.phone && touched.phone && (
@@ -369,7 +371,7 @@ const InquiryFormSection = () => {
 
             <button 
               type="submit"
-              className="w-full bg-[#012920] hover:bg-[#012920]/90 text-white py-2 rounded transition-colors duration-200 flex items-center justify-center gap-1.5 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-[#002654] hover:bg-[#002654]/90 text-white py-2 rounded transition-colors duration-200 flex items-center justify-center gap-1.5 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={Object.keys(errors).length > 0}
             >
               {form.submitButton}
