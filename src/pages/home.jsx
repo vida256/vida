@@ -2,6 +2,7 @@ import { Footer } from "@/widgets/layout";
 import { ChevronRight } from 'lucide-react';
 import { useEffect, useState } from "react";
 import WasteManagementSection from "./financial";
+import PartnersSection from "./PartnersSection";
 import InquiryFormSection from "./requestPickupSection";
 import ServicesSection from "./servicesSection";
 
@@ -64,8 +65,8 @@ export function Home() {
           </div>
         </div>
       </div>
-
       <WasteManagementSection />
+      <PartnersSection/>
       <ServicesSection />
       <InquiryFormSection />
       <div className="bg-white">

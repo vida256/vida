@@ -87,7 +87,7 @@ const ServicesSection = () => {
             <section className="w-full max-w-7xl mx-auto p-4 sm:p-6">
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
-                    <h2 className="text-xl font-bold text-gray-900 mb-4 sm:mb-0">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4 sm:mb-0">
                         {servicesContent.title}
                     </h2>
                     <div className="flex gap-2">
