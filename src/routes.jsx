@@ -1,6 +1,7 @@
 import { Home } from "@/pages";
 import AboutUs from "./pages/AboutUs";
 import PartnersScreen from "./pages/PartnersScreen";
+import VidaServicesFullScreen from "./pages/Services";
 
 export const routes = [
   {
@@ -14,6 +15,11 @@ export const routes = [
     element: <AboutUs />
   },
   {
+    name: "Services",
+    path: "/services",
+    element: <VidaServicesFullScreen />
+  },
+  {
     name: "Partners",
     path: "/partners",
     element: <PartnersScreen />
@@ -21,11 +27,6 @@ export const routes = [
   {
     name: "Projects",
     path: "/projects",
-    element: <Home />
-  },
-  {
-    name: "Gallery",
-    path: "/gallery",
     element: <Home />
   }
 ];

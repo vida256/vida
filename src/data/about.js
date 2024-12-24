@@ -22,7 +22,7 @@ export const companyInfo = {
     stats: {
       fullTimeEmployees: 12,
       partTimeEmployees: 63,
-      yearsExperience: 20,
+      yearsExperience: 10,
       branches: 3,
       completedProjects: 15
     },
