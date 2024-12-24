@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { wasteManagementContent } from '../data/wasteManagement';
 
 const StatCard = ({ icon: Icon, number, text, subtext, isVisible }) => (
-  <div className={`transform transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+  <div className={`transform bg-gray-50 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
     <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
       <div className="p-6">
         <div className="flex items-start gap-4">
@@ -42,7 +42,7 @@ const WasteManagementSection = () => {
   }, []);
 
   return (
-    <section id="vida-section" className="py-16 bg-gradient-to-b from-blue-50 to-white">
+    <section id="vida-section" className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Column */}

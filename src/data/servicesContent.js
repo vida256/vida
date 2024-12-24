@@ -24,8 +24,8 @@ export const servicesContent = {
             image: "/img/enterprise-development.jpg"
         },
         {
-            title: "Financial Literacy Programs",
-            description: "Our financial literacy programs are designed to improve knowledge and skills related to budgeting, saving, borrowing, and investing. We support individuals and groups to make informed financial decisions.",
+            title: "Financial Inclusion Programs",
+            description: "Our Financial Inclusion programs are designed to improve knowledge and skills related to budgeting, saving, borrowing, and investing. We support individuals and groups to make informed financial decisions.",
             image: "/img/financial-literacy.jpg"
         },
         {
