@@ -2,6 +2,7 @@
 import routes from "@/routes";
 import Navbar from "@/widgets/layout/navbar";
 import { Navigate, Route, Routes } from "react-router-dom";
+import ContactPage from "./pages/contactUs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             element ? <Route key={key} exact path={path} element={element} /> : null
           )}
           <Route path="*" element={<Navigate to="/home" replace />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
     </>

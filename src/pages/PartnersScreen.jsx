@@ -1,3 +1,4 @@
+import { Footer } from '@/widgets/layout';
 import { Building2, Globe2, Users } from 'lucide-react';
 import { useState } from 'react';
 import { partnersData } from '../data/partnersData';
@@ -119,6 +120,7 @@ const PartnersScreen = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };

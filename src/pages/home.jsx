@@ -3,7 +3,6 @@ import { ChevronRight } from 'lucide-react';
 import { useEffect, useState } from "react";
 import WasteManagementSection from "./financial";
 import PartnersSection from "./PartnersSection";
-import InquiryFormSection from "./requestPickupSection";
 import ServicesSection from "./servicesSection";
 
 export function Home() {
@@ -68,7 +67,7 @@ export function Home() {
       <WasteManagementSection />
       <PartnersSection/>
       <ServicesSection />
-      <InquiryFormSection />
+      {/* <InquiryFormSection /> */}
       <div className="bg-white">
         <Footer />
       </div>

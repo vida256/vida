@@ -28,7 +28,12 @@ export const routes = [
     name: "Projects",
     path: "/projects",
     element: <Home />
-  }
+  },
+  // {
+  //   name: "Contact Us",
+  //   path: "/contact",
+  //   element: <ContactPage />
+  // }
 ];
 
 export default routes;

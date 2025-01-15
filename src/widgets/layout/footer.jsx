@@ -1,7 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { ArrowRight, Mail } from 'lucide-react';
 import PropTypes from "prop-types";
 import { footerContent } from '../../data/footerContent';
 
@@ -20,7 +19,7 @@ export function Footer({ content = footerContent }) {
     <footer className="relative">
 
       {/* Newsletter Section */}
-      <div className="bg-[#f0f2f2]">
+      {/* <div className="bg-[#f0f2f2]">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="bg-[#003A7A] p-8 rounded-lg">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -47,7 +46,7 @@ export function Footer({ content = footerContent }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer Links */}
       <div className="bg-[#002654] pt-8 pb-16">

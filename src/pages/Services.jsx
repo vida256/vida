@@ -1,3 +1,4 @@
+import { Footer } from '@/widgets/layout';
 import {
     ArrowRight,
     Building,
@@ -13,6 +14,7 @@ import {
     X
 } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Modal Component
 const ServiceModal = ({ isOpen, onClose, service }) => {
@@ -327,11 +329,14 @@ const VidaServicesFullScreen = () => {
 
                 {/* Contact Section */}
                 <div className="mt-20 text-center bg-gradient-to-r from-blue-900 to-blue-800 py-12 rounded-lg">
-                    <p className="text-gray-50 mb-4">Need more information about our services?</p>
-                    <button className="px-8 py-3 bg-white text-blue-900 rounded-lg hover:bg-blue-100 transition-colors">
-                        Contact Us
-                    </button>
-                </div>
+  <p className="text-gray-50 mb-4">Need more information about our services?</p>
+  <Link
+    to="/contact"
+    className="inline-block px-8 py-3 bg-white text-blue-900 rounded-lg hover:bg-blue-100 transition-colors"
+  >
+    Contact Us
+  </Link>
+</div>
             </div>
 
             {/* Service Detail Modal */}
@@ -340,6 +345,7 @@ const VidaServicesFullScreen = () => {
                 onClose={() => setSelectedService(null)}
                 service={selectedService}
             />
+            <Footer/>
         </div>
     );
 };

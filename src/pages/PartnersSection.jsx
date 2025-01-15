@@ -8,7 +8,7 @@ const PartnersSection = () => {
 
   return (
     <section className="py-8 md:py-5 bg-gray-50">
-      <div className="w-full px-4">
+      <div className="px-4">
         <div className="mb-8 md:mb-16 text-center max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
             OUR TRUSTED PARTNERS
