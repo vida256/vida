@@ -300,17 +300,17 @@ const VidaServicesFullScreen = () => {
 
     return (
         <div className="min-h-screen bg-blue-gray-50">
-        <div className="relative h-[250px] bg-gradient-to-r from-blue-900 to-blue-800">
-          <div className="absolute inset-0 bg-black/50"></div>
-          <div className="relative max-w-7xl mx-auto px-4 py-16 text-center">
-            <h1 className="text-3xl font-bold text-white mb-3">
-              Our services
-            </h1>
-            <p className="text-white/90 text-sm max-w-2xl mx-auto">
-            Delivering transformative solutions in youth skilling, financial inclusion, agricultural development, and enterprise growth programs.
-            </p>
-          </div>
-        </div>
+            <div className="relative h-[250px] bg-gradient-to-r from-blue-900 to-blue-800">
+                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="relative max-w-7xl mx-auto px-4 py-16 text-center">
+                    <h1 className="text-3xl font-bold text-white mb-3">
+                        Our services
+                    </h1>
+                    <p className="text-white/90 text-sm max-w-2xl mx-auto">
+                        Delivering transformative solutions in youth skilling, financial inclusion, agricultural development, and enterprise growth programs.
+                    </p>
+                </div>
+            </div>
 
             {/* Services Section */}
             <div className="max-w-7xl mx-auto px-4 py-20">
@@ -329,14 +329,14 @@ const VidaServicesFullScreen = () => {
 
                 {/* Contact Section */}
                 <div className="mt-20 text-center bg-gradient-to-r from-blue-900 to-blue-800 py-12 rounded-lg">
-  <p className="text-gray-50 mb-4">Need more information about our services?</p>
-  <Link
-    to="/contact"
-    className="inline-block px-8 py-3 bg-white text-blue-900 rounded-lg hover:bg-blue-100 transition-colors"
-  >
-    Contact Us
-  </Link>
-</div>
+                    <p className="text-gray-50 mb-4">Need more information about our services?</p>
+                    <Link
+                        to="/contact"
+                        className="inline-block px-8 py-3 bg-white text-blue-900 rounded-lg hover:bg-blue-100 transition-colors"
+                    >
+                        Contact Us
+                    </Link>
+                </div>
             </div>
 
             {/* Service Detail Modal */}
@@ -345,7 +345,7 @@ const VidaServicesFullScreen = () => {
                 onClose={() => setSelectedService(null)}
                 service={selectedService}
             />
-            <Footer/>
+            <Footer />
         </div>
     );
 };
