@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { Footer } from '@/widgets/layout';
+import { useState } from 'react';
 // Import Footer dynamically to avoid MIME type issues
-const Footer = React.lazy(() => import('@/widgets/layout/Footer'));
+// const Footer = React.lazy(() => import('@/widgets/layout/Footer'));
 
 // Map placeholder component since we can't use external libraries
 const MapPlaceholder = () => (
@@ -240,9 +241,10 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <React.Suspense fallback={<div>Loading...</div>}>
+      <Footer/>
+      {/* <React.Suspense fallback={<div>Loading...</div>}>
         <Footer />
-      </React.Suspense>
+      </React.Suspense> */}
     </div>
   );
 };
