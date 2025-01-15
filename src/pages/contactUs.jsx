@@ -199,7 +199,9 @@ const ContactPage = () => {
           </div>
 
           {/* Map Section */}
-          
+          <div className="w-full rounded-lg overflow-hidden shadow-lg h-64 bg-gray-100">
+            <MapComponent />
+          </div>
         </div>
 
         {/* Right Section - Contact Form */}
