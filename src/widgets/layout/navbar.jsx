@@ -98,6 +98,12 @@ export function Navbar({ routes }) {
               >
                 Contact Us
               </NavLink>
+              <NavLink
+                to="/admin"
+                className="border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white px-4 py-1.5 rounded text-sm font-medium transition-colors"
+              >
+                Admin
+              </NavLink>
             </div>
 
             {/* Mobile Menu Button */}
@@ -134,6 +140,12 @@ export function Navbar({ routes }) {
                   className="block w-full text-center border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white px-4 py-1.5 rounded text-sm font-medium transition-colors"
                 >
                   Contact Us
+                </NavLink>
+                <NavLink
+                  to="/admin"
+                  className="block w-full text-center border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white px-4 py-1.5 rounded text-sm font-medium transition-colors"
+                >
+                  Admin
                 </NavLink>
               </div>
             </div>

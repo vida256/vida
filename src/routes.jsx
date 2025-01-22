@@ -2,6 +2,7 @@ import { Home } from "@/pages";
 import AboutUs from "./pages/AboutUs";
 import PartnersScreen from "./pages/PartnersScreen";
 import VidaServicesFullScreen from "./pages/Services";
+import VidaPrograms from "./pages/programs";
 
 export const routes = [
   {
@@ -27,12 +28,12 @@ export const routes = [
   {
     name: "Projects",
     path: "/projects",
-    element: <Home />
+    element: <VidaPrograms />
   },
   // {
-  //   name: "Contact Us",
-  //   path: "/contact",
-  //   element: <ContactPage />
+  //   name: "Project Details",
+  //   path: "/programs/:slug",
+  //   element: <DynamicProjectPage />
   // }
 ];
 
