@@ -2,7 +2,7 @@ import { Home } from "@/pages";
 import AboutUs from "./pages/AboutUs";
 import PartnersScreen from "./pages/PartnersScreen";
 import VidaServicesFullScreen from "./pages/Services";
-import VidaPrograms from "./pages/programs";
+import ModernProjects from "./pages/projects";
 
 export const routes = [
   {
@@ -28,7 +28,7 @@ export const routes = [
   {
     name: "Projects",
     path: "/projects",
-    element: <VidaPrograms />
+    element: <ModernProjects />
   },
   // {
   //   name: "Project Details",
